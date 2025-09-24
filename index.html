@@ -3,14 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <title>Mon premier site</title>
+    <style>
+        body {
+            /* Remplacez le chemin si besoin */
+            background: url('IMG/cv.png') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff; /* Texte blanc pour contraster avec l'image */
+            text-shadow: 1px 1px 4px #000; /* Améliore la lisibilité du texte */
+        }
+        nav {
+            background: rgba(16,37,66,0.95); /* Bleu marine semi-transparent */
+        }
+        nav a {
+            color: #fff;
+            font-weight: bold;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        footer {
+            background: rgba(16,37,66,0.95);
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 40px;
+        }
+        /* Optionnel : fond semi-transparent pour les sections */
+        h1, h2, ul, p, a {
+            background: rgba(16,37,66,0.7);
+            display: inline-block;
+            padding: 8px 16px;
+            border-radius: 8px;
+        }
+        img[alt="Photo de profil"] {
+            background: none;
+            box-shadow: 0 0 10px #0008;
+            border-radius: 8px;
+        }
+    </style>
 </head>
 <body>
-    <nav style="background:#102542; padding:10px 0; text-align:center; position:sticky; top:0; z-index:100;">
-        <a href="#accueil" style="margin:0 15px; text-decoration:none; color:#fff; font-weight:bold;">Accueil</a>
-        <a href="projets.html" style="margin:0 15px; text-decoration:none; color:#fff; font-weight:bold;">Projets</a>
-        <a href="#veille" style="margin:0 15px; text-decoration:none; color:#fff; font-weight:bold;">Veille</a>
-        <a href="#stages" style="margin:0 15px; text-decoration:none; color:#fff; font-weight:bold;">Stages</a>
-        <a href="#contact" style="margin:0 15px; text-decoration:none; color:#fff; font-weight:bold;">Contact</a>
+    <nav style="padding:10px 0; text-align:center; position:sticky; top:0; z-index:100;">
+        <a href="#accueil">Accueil</a>
+        <a href="projets.html">Projets</a>
+        <a href="#veille">Veille</a>
+        <a href="#stages">Stages</a>
+        <a href="#contact">Contact</a>
     </nav>
     <h1>Bienvenue sur mon portfolio</h1>
     <p>Je suis Ayman Zezima , 

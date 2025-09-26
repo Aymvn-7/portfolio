@@ -3,19 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <title>Mon premier projet</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('IMG/portfolio.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            text-shadow: 1px 1px 4px #000;
+            font-family: Arial, sans-serif;
+        }
+        nav {
+            background: #102542;
+            padding: 10px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+        h1, h2, ul, p, a {
+            background: rgba(16,37,66,0.7);
+            display: inline-block;
+            padding: 8px 16px;
+            border-radius: 8px;
+        }
+        footer {
+            background: rgba(16,37,66,0.95);
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 40px;
+        }
+    </style>
 </head>
 <body>
-    <nav style="background:#102542; padding:10px 0; text-align:center; position:sticky; top:0; z-index:100;">
-        <a href="index.html" style="margin:0 15px; text-decoration:none; color:#fff; font-weight:bold;">Accueil</a>
-        <a href="projets.html" style="margin:0 15px; text-decoration:none; color:#fff; font-weight:bold;">Projets</a>
-        <a href="#veille" style="margin:0 15px; text-decoration:none; color:#fff; font-weight:bold;">Veille</a>
-        <a href="#stages" style="margin:0 15px; text-decoration:none; color:#fff; font-weight:bold;">Stages</a>
-        <a href="#contact" style="margin:0 15px; text-decoration:none; color:#fff; font-weight:bold;">Contact</a>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="projets.html">Projets</a>
+        <a href="#veille">Veille</a>
+        <a href="#stages">Stages</a>
+        <a href="#contact">Contact</a>
     </nav>
     <h1>Bienvenue sur mon projet</h1>
-    <p> 
-    
-    <a href="https://github.com">Visitez mon GitHub</a>
+    <p>
+        <a href="https://github.com">Visitez mon GitHub</a>
+    </p>
     <hr>
     <h2></h2>
     <ul>
@@ -23,7 +61,6 @@
         <li></li>
         <li></li>
     </ul>
-    
     <footer>
         <p></p>
     </footer>

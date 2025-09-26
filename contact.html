@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <style>
         body {
             margin: 0;
@@ -32,6 +33,44 @@
         nav a:hover {
             color: #d4f1f4 !important;
         }
+        .contact-container {
+            background: rgba(16,37,66,0.85);
+            border-radius: 12px;
+            box-shadow: 0 2px 12px #0005;
+            max-width: 400px;
+            margin: 60px auto 0 auto;
+            padding: 32px 28px 24px 28px;
+            text-align: left;
+        }
+        .contact-container h1 {
+            color: #d4f1f4;
+            margin-bottom: 24px;
+            font-size: 1.5em;
+            text-align: center;
+        }
+        .contact-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            color: #fff;
+            font-size: 1.08em;
+        }
+        .contact-list li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 18px;
+            font-size: 1.08em;
+        }
+        .contact-list i {
+            width: 28px;
+            font-size: 1.25em;
+            color: #d4f1f4;
+            margin-right: 14px;
+            text-align: center;
+        }
+        .contact-list strong {
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -42,6 +81,15 @@
         <a href="stages.html">Stages</a>
         <a href="contact.html">Contact</a>
     </nav>
-    <!-- Ajoutez ici le contenu de votre page de contact -->
+    <div class="contact-container">
+        <h1>Contact</h1>
+        <ul class="contact-list">
+            <li><i class="fa-solid fa-user"></i><strong>Zezima Ayman</strong></li>
+            <li><i class="fa-solid fa-phone"></i>07 82 66 97 58</li>
+            <li><i class="fa-solid fa-envelope"></i>aymanzezima07@gmail.com</li>
+            <li><i class="fa-solid fa-location-dot"></i>43 rue du General Dalton<br>&nbsp;&nbsp;&nbsp;&nbsp;19100 Brive la Gaillarde</li>
+            <li><i class="fa-solid fa-car"></i>Permis B</li>
+        </ul>
+    </div>
 </body>
 </html>

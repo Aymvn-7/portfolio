@@ -1,4 +1,52 @@
-<body style="margin:0; padding:0; background: url('IMG/portfolio.jpg') no-repeat center center fixed; background-size: cover;">
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Stages</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('IMG/portfolio.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            font-size: 1.18em;
+        }
+        nav {
+            background: #102542;
+            padding: 18px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 8px #0002;
+        }
+        nav a {
+            color: #fff !important;
+            font-size: 1.18em;
+            margin: 0 22px;
+            text-decoration: none;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        nav a:hover {
+            color: #d4f1f4 !important;
+        }
+        .contenu {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 80vh;
+            margin-top: 40px;
+        }
+        h1, p {
+            color: #fff;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
     <nav>
         <a href="index.html">Accueil</a>
         <a href="projets.html">Projets</a>
@@ -6,3 +54,9 @@
         <a href="stages.html">Stages</a>
         <a href="contact.html">Contact</a>
     </nav>
+    <div class="contenu">
+        <h1>Mes stages</h1>
+        <p>Retrouvez ici la présentation de mes expériences de stage.</p>
+    </div>
+</body>
+</html>

@@ -27,12 +27,67 @@
             color: #fff;
             font-weight: bold;
         }
-        /* Retrait du fond bleu marine sur les titres et paragraphes */
         h1, h2, ul, p, a {
             background: none;
             display: inline-block;
             padding: 8px 16px;
             border-radius: 8px;
+        }
+        .projets-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+            margin: 40px 0;
+        }
+        .projet {
+            display: flex;
+            background: rgba(16,37,66,0.85);
+            border-radius: 14px;
+            box-shadow: 0 2px 12px #0005;
+            max-width: 800px;
+            width: 90%;
+            overflow: hidden;
+        }
+        .projet-image {
+            width: 220px;
+            min-height: 180px;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .projet-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .projet-texte {
+            flex: 1;
+            padding: 24px 28px;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .projet-texte h2 {
+            margin-top: 0;
+            color: #d4f1f4;
+            font-size: 1.25em;
+        }
+        @media (max-width: 700px) {
+            .projet {
+                flex-direction: column;
+                align-items: center;
+            }
+            .projet-image {
+                width: 100%;
+                min-height: 140px;
+            }
+            .projet-texte {
+                padding: 18px 12px;
+            }
         }
         footer {
             background: rgba(16,37,66,0.95);
@@ -56,10 +111,30 @@
         <a href="https://github.com">Visitez mon GitHub</a>
     </p>
     <hr>
-    <ul>
-        <li>Voici mes différents projets :</li>
-        <li></li>
-    </ul>
+    <div class="projets-container">
+        <div class="projet">
+            <div class="projet-image">
+                <img src="IMG/projet1.jpg" alt="Projet 1">
+            </div>
+            <div class="projet-texte">
+                <h2>Projet 1 : Titre du projet</h2>
+                <p>
+                    Description de votre premier projet. Présentez le contexte, les technologies utilisées, les objectifs et le résultat obtenu.
+                </p>
+            </div>
+        </div>
+        <div class="projet">
+            <div class="projet-image">
+                <img src="IMG/projet2.jpg" alt="Projet 2">
+            </div>
+            <div class="projet-texte">
+                <h2>Projet 2 : Titre du projet</h2>
+                <p>
+                    Description de votre deuxième projet. Expliquez le but du projet, votre rôle, les outils utilisés et ce que vous avez appris.
+                </p>
+            </div>
+        </div>
+    </div>
     <footer>
         <p></p>
     </footer>
